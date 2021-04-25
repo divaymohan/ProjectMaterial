@@ -13,7 +13,35 @@
 5. **Supervised Learning**
 6. **Supervised learning with MLP**
 
-### NLP (Negative Link Prediction)
+### Edge selection algorithm
+
+```
+Input: Adjacency Matrix, ScoreFunctionMatrix
+Output: edge(i,j)
+SelectNode:
+    MaxIndex=70
+    TopRank=-1
+    for i=1 to MaxIndex-1 do
+        for j=i+1 to MaxIndex do
+            if Matrix(i,j)==0 then
+                TempRank= ScoreFunctionMatrix(i,j)
+                if TempRank>TopRank then
+                    x=i
+                    y=j
+                    TopRank=TempRank
+                end if
+            end if
+        end for
+    end for
+```
+
+### NLP First (Negative Link Prediction First)
+* Introduction
+* Algorithm
+
+* Results 
+
+### PLP First (Negative Link Prediction First)
 * Introduction
 * Algorithm
 * Results 
@@ -23,22 +51,24 @@
 * Algorithm
 * Results
 
-## Batch approach with MLP
+### Batch approach with MLP
 * Introduction
 * Algorithm
 * Results
 
-## MLP on Normalized score
+### MLP on Normalized score
 * Introduction
 * Algorithm
 * Results
 
-## Supervised Learning
+### Supervised Learning
 * Introduction
 * Algorithm
 * Results
 
-## Supervised learning with MLP
+### Supervised learning with MLP
 * Introduction
 * Algorithm
 * Results
+
+### Resources Used
