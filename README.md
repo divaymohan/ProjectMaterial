@@ -36,8 +36,11 @@ SelectNode:
 ```
 
 ### NLP First (Negative Link Prediction First)
-* Introduction
-* Algorithm
+* Introduction :- In NLP first approach we predict all the edges which can be removed in the future.
+* Algorithm :-
+    1. Calculate Score(i,j) for every i and j.
+    2. Select one edge using Edge Selection algorithm such that the edge does not exist in the graph and have highest score.
+    
 
 * Results 
 
